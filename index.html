@@ -1,58 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./style.css">
-    <title>Profile Card</title>
+    <title>My Profile Card</title>
 </head>
 <body>
-    <div class="profile-container">
+    <div class="profileContainer">
         <div class="img-container">
-            <img src="32px/Screenshot (1089).png" alt="profile image">
+            <img src="img/KamisatoAyaka-min.png" alt="profile">
         </div>
-        <p class="info full-name">Aditya Fitriana NS</p>
-        <p class="skill">
-            Web Developer I Web Design
-        </p>
-        <p class="skill">
-            Design Grafis
-        </p>
-        <p class="place">
-            Bogor, Gunung Putri
-        </p>
-
+        <!--Add your biodata-->
+        <p class="full-name">Aditya Fitriana NS</p>
+        <p class="skill">Web Developer I Vector Graphic</p>
+        <p class="skill">Design Graphic</p>
+        <p class="place">Gunung Putri, Bogor</p>
+        <!--Post Info-->
         <div class="posts-info">
             <p><span>100</span> Posts</p>
             <p><span>1500</span> Likes</p>
-            <p><span>--</span> Works</p>
+            <p><span>50</span> Works</p>
         </div>
-
-        <p class="sosmed">
-            My Social Media
-        </p>
-        <div class="social-container">
-            <button class="facebook" >
-                <a href="https://www.web.facebook.com/Katekichifuka"><img src="32px/fb.png" alt="facebook"></a>
-            </button>
+        <!--Add your Social Media-->
+        <!--Ganti link pada <a href=""> , menjadi link sosial media yang digunakan-->  
+        <p class="sosmed">My Social Media</p>
+        <div class="social-media">
             <button class="instagram">
-                <a href="https://www.instagram.com/dit040101/"><img src="32px/ig.png" alt="instagram"></a>
+            <a href="https://www.instagram.com/dit040101/"><i class='bi bi-instagram' ></i></a>
             </button>
             <button class="twitter">
-                <a href="https://twitter.com/AdityaFNS04"><img src="32px/twit.png" alt="twitter"></a>
+            <a href="https://twitter.com/AdityaFNS04"><i class='bi bi-twitter'></i></a>
             </button>
             <button class="github">
-                <a href="https://github.com/AdityaFitrianaNS"><img src="32px/github.png" alt="github"></a>
+            <a href="https://github.com/AdityaFitrianaNS"><i class='bi bi-github'></i></a>
+            </button>
+            <button class="devianart">
+            <a href="https://www.deviantart.com/adityafns"><i class='bi bi-vector-pen'></i></a>
             </button>
         </div>
-
+        <!--Button follow & Message-->
         <button class="action">
             <a href="https://www.instagram.com/dit040101/">Follow</a>
         </button>
         <button class="action message">
-            <a href="aditya.fns04@gmail.com">Message</a>
+            <a href="https://www.deviantart.com/adityafns">Message</a>
         </button>
     </div>
-    
 </body>
 </html>
