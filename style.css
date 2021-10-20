@@ -1,147 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 * {
-    margin     : 0;
-    padding    : 0;
-    box-sizing : border-box;
-    color      : #334e64;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-
 body {
-    min-height     : 100vh;
-    width          : 100%;
-    display        : flex;
+    display: flex;
     justify-content: center;
-    align-items    : center;
-    background     : linear-gradient(25deg, #5600ffd1, #00adffd9);
+    align-items: center;
+    background     : linear-gradient(270deg, #5600ffd1, #00adffd9)
 }
-
-.profile-container {
-    position        : relative;
+.profileContainer {
+    margin-top: 85px;
+    margin-bottom: 20px;
+    position: relative;
     background-color: #fff;
-    size: 100px;
-    padding         : 100px 40px 45px;
-    border-radius   : 30px;
-    box-shadow      : 0 0 1px 2px rgb(0 8 255 / 19%);
-    display         : flex;
-    flex-direction  : column;
-    justify-content : center;
-    align-items     : center;
-    bottom: -10px;
+    padding: 100px 30px 45px;
+    border-radius: 30px;
+    box-shadow: 0 0 1px 2px rgb(0 8 255 / 19%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
 .img-container {
-    width        : 125px;
-    height       : 125px;
-    overflow     : hidden;
-    border       : 5px solid #5600ffd1;
+    width: 130px;
+    height: 130px;
+    border: 4px solid #5600ffd1;
     border-radius: 50%;
-    box-shadow   : 0 2px 5px #b92a76a4;
-    position     : absolute;
-    top          : 15px;
-    left         : 50%;
-    transform    : translate(-50%, -50%);
+    box-shadow: 0 2px 3px #28b5ff;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-
 .img-container img {
-    width    : 100%;
+    width: 100%;
     max-width: 100%;
-    transform: scale(2.6);
 }
-
-.info {
-    margin-bottom: 12px;
-}
-
-.info i {
-    margin-right: 8px;
-    font-size   : 1.1em;
-}
-
 .place {
     margin-bottom: 30px;
 }
-
 .full-name {
-    font-size     : 1.4em;
-    font-weight   : bold;
+    font-size: 23px;
+    font-weight: bold;
     letter-spacing: 1px;
-    color         : #6440f4;
+    color: #6440f4;
+    margin-bottom: 13px;
 }
 .skill {
     margin-bottom: 5px;
 }
 .posts-info {
-    width          : 100%;
-    display        : flex;
+    width: 100%;
+    display: flex;
     justify-content: space-around;
-    align-items    : center;
-    font-size      : 1em;
-    letter-spacing : 0.5px;
-    margin-bottom  : 20px;
-    text-align     : center;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    text-align: center;
 }
-
 .posts-info span {
-    display      : block;
-    font-weight  : bold;
+    display: block;
+    font-weight: bold;
     margin-bottom: 4px;
 }
-
 .sosmed {
-    font-size     : 1.1em;
+    font-size: 17px;
     align-items: center;
-    font-weight   : bold;
+    font-weight: bold;
     letter-spacing: 1px;
-    color         : #6440f4;
+    color: #6440f4;
     margin-bottom: 15px;
 }
-
-.social-container {
+.social-media {
     width          : 100%;
     display        : flex;
-    justify-content: space-between;
     align-items    : center;
-    margin-bottom  : 20px;
+    margin-bottom  : 15px;
+    margin-top     : 5px;
+    justify-content: center;
 }
-
-.social-container i {
+.social-media i {
     color: #fff;
 }
-
-.social-container button {
+.social-media button {
     border          : none;
     outline         : none;
-    width           : 50px;
-    height          : 50px;
+    width           : 40px;
+    height          : 40px;
     border-radius   : 50%;
     cursor          : pointer;
     transition      : transform 0.3s;
+    font-size       : 19px;
+    align-items     : center;
+    margin-right    : 8px;
+    margin-top      : 0;
+    text-align      : center;
 }
-
-.social-container button:hover {
+.social-media button:hover {
     transform: scale(1.1);
 }
-
 /* Social colors */
-
-.social-container button.facebook {
-    background: linear-gradient(45deg,  #0100ff80, #00ccff9c);
+.social-media button.twitter {
+    background: linear-gradient(45deg, #6741ff, #2aacfa)
 }
-.social-container button.instagram {
-    background: linear-gradient(45deg, #e6683c7a 25%, #dc27438f 50%, #bc1888 100%);
+.social-media button.instagram {
+    background: linear-gradient(45deg, #6741ff, #2aacfa)
 }
-.social-container button.twitter {
-    background: linear-gradient(45deg ,#00b6ffeb, #5ea9dd73);
+.social-media button.github {
+    background: linear-gradient(45deg, #6741ff, #2aacfa)
 }
-
-.social-container button.github{
-    background: linear-gradient(45deg, #477eff, #ce428d);
-}
-button.youtube img.fb
-{
-    width: 10px;
-    height: 10px;
-}
+.social-media button.devianart {
+    background: linear-gradient(45deg, #6741ff, #2aacfa)
+}  
 .action {
     outline: none;
     cursor: pointer;
@@ -149,25 +125,87 @@ button.youtube img.fb
     background-color: #2aacfa;
     border: none;
     border-radius: 50px;
-    padding: 12px 20px;
-    width: 50%;
+    padding: 10px 0px;
+    width: 40%;
     margin-top: 10px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
     transition: transform 0.3s, opacity 0.3s;
 }
-
 .action.message {
     background-color: #6741ff;
 }
-
-.action a
-{
+.action a {
     color: #fff;
     text-decoration: none;
+    font-size: 12px;
 }
 .action:hover {
     transform: scale(1.05);
     opacity: 0.85;
+}
+@media (max-width: 991px) {
+    .profileContainer {
+        margin-top: 70px;
+        margin-bottom: 20px;
+        margin-left : 20px;
+    }
+}
+@media (max-width: 768px) {
+    
+    .profileContainer {
+        padding     : 90px 30px 30px;
+        margin-top  : 88px;
+        margin-right: 20px;
+    }
+    .img-container {
+        width   : 115px;
+        height  : 115px;
+        border: 3px solid #5600ffd1;
+        border-radius: 50%;
+        box-shadow: 0 2px 3px #28b5ff;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media (max-width: 340px) {
+    .profileContainer {
+        width       : 90%;
+        margin-left : 16px;
+        margin-top  : 55px;
+        padding     : 90px 20px 20px;
+        margin-bottom: 10px;
+    }
+    .full-name {
+        font-size: 20px;
+    }
+    .skill {
+        font-size: 15px;
+    }
+    .place {
+        font-size: 15px;
+    }
+    .posts-info {
+        font-size: 15px;
+    }
+    .sosmed{
+        font-size: 18px;
+    }
+    .social-media button {
+        border          : none;
+        outline         : none;
+        width           : 35px;
+        height          : 35px;
+        border-radius   : 50%;
+        cursor          : pointer;
+        transition      : transform 0.3s;
+        font-size       : 16px;
+        align-items     : center;
+        margin-right    : 8px;
+        margin-top      : 0;
+        text-align      : center;
+    }
 }
